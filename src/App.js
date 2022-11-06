@@ -3,6 +3,10 @@ import Modal from "./components/Modal";
 import axios from "axios";
 import {PieChart, Pie} from 'recharts';
 
+axios.defaults.xsrfCookieName = 'csrftoken'
+axios.defaults.xsrfHeaderName = 'X-CSRFToken'
+
+
 class App extends Component {
   constructor(props) {
     super(props);
